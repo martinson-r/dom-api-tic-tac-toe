@@ -10,14 +10,13 @@ window.addEventListener("DOMContentLoaded", event => {
         for (i = 0; i < 9; i+=3) {
             if ((squareValues[i] !== "") && (squareValues[i] === squareValues[i+1]) && (squareValues[i+1] === squareValues[i+2])) {
                 gameStatus = squareValues[i];
-                console.log(gameStatus);
             }
-        }
 
         for (i = 0; i < 3; i+=1) {
             if ((squareValues[i] !== "") && (squareValues[i] === squareValues[i+3]) && (squareValues[i+3] === squareValues[i+6])) {
                 gameStatus = squareValues[i];
             }
+        }
 
             if ((squareValues[0] !== "") && (squareValues[0] === squareValues[4]) && (squareValues[0] === squareValues[8])) {
                 gameStatus = squareValues[0];
